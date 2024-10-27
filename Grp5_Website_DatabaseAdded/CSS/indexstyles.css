@@ -1,0 +1,298 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #333;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-section {
+    background-image: url('../images/Background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 100vh;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.profiles {
+    background-color: #EDC8B8;
+    padding: 60px 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.profiles .profile {
+    background-color: #EDE2DC;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    height: 450px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.profile-header {
+    margin-bottom: 5px;
+}
+
+.profile-header img {
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #123D6A;
+}
+
+.profile-header h2 {
+    font-size: 22px;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.profile-header p {
+    color: #555;
+    font-size: 16px;
+    margin: 10px 0 20px;
+}
+
+.profile-content p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin: 10px 0px;
+}
+
+.icon-button img {
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin: 3;
+    border: 2px solid #123D6A;
+    transition: transform 0.4s;
+}
+
+.icon-button img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #123D6A;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #0c2846;
+}
+
+h1 {
+    color: #fff;
+    margin: 40px 0;
+    padding: 10px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.team-member {
+    background-color: #ffffffa9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 170px;
+    height: 200px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.4s, box-shadow 0.4s;
+    top: -20px;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    transition: transform 0.4s;
+    margin-bottom: 2px;
+}
+
+.team-member:hover img {
+    transform: scale(1.4);
+}
+
+.team-member h3 {
+    color: #333;
+    margin: 8px 0 5px;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.team-member p {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.team-member a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #123D6A;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 12px;
+    transition: background-color 0.3s;
+}
+
+.team-member a:hover {
+    background-color: #0c2846;
+}
+
+.team-intro {
+    background-color: #44444469;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.team-intro h1 {
+    color: #ffffff;
+    margin: 20px auto;
+    overflow: hidden;
+    width: 800px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid white;
+}
+
+.team-intro p {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.team-intro img {
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin: 5px 0;
+    border: 1px solid #123D6A;
+}
+
+.more-info {
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #123D6A;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.more-info:hover {
+    background-color: #0c2846;
+}
+
+/* Base styles (Desktop) - Your current styles go here */
+@media screen and (max-width: 1024px) {
+    /* Tablet styles */
+    .profiles {
+        padding: 40px 10px;
+    }
+
+    .profiles .profile {
+        max-width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .team-container {
+        gap: 5px;
+    }
+
+    .team-member {
+        width: 150px;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Mobile styles */
+    .profiles {
+        padding: 20px 5px;
+    }
+
+    .profiles .profile {
+        max-width: 95%;
+        margin: 10px auto;
+    }
+
+    .team-member {
+        width: 120px;
+        height: 150px;
+    }
+
+    .team-member img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .profile-header h2 {
+        font-size: 18px;
+    }
+
+    .profile-header p, .profile-content p {
+        font-size: 14px;
+    }
+    
+    .team-intro h1 {
+        width: auto;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .team-intro p {
+        margin: 0 10px;
+    }
+}
